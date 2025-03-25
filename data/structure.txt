@@ -1,0 +1,66 @@
+{
+    id: 1,
+    essay-type: 'Problem & Solution',
+    structure: `
+        1.Introduction
+            -Topic paraphrase
+            -Author's point
+        2.Body-1(Problems)
+            -Topic sentence
+            -Problem-1 -> Reason/Example/Detail
+            -Problem-2 -> Reason/Example/Detail
+            -Problem-3 (optional) -> Reason/Example/Detail
+        2.Body-2(Solutions)
+            -Topic sentence
+            -Solution-1 -> Reason/Example/Detail
+            -Solution-2 -> Reason/Example/Detail
+            -Solution-3 (optional) -> Reason/Example/Detail
+        4.Conclusion
+            -In concusion/ To conclude, Topic paraphrase
+            -Author's point
+    `
+},
+{
+    id: 2,
+    essay-type: 'Cause & Solution',
+    structure: `
+        1.Introduction
+            -Topic paraphrase
+            -Author's point
+        2.Body-1(Problems)
+            -Topic sentence
+            -Cause-1 -> Reason/Example/Detail
+            -Cause-2 -> Reason/Example/Detail
+            -Cause-3 (optional) -> Reason/Example/Detail
+        2.Body-2(Solutions)
+            -Topic sentence
+            -Solution-1 -> Reason/Example/Detail
+            -Solution-2 -> Reason/Example/Detail
+            -Solution-3 (optional) -> Reason/Example/Detail
+        4.Conclusion
+            -In concusion/ To conclude, Topic paraphrase
+            -Author's point
+    `
+},
+{
+    id: 3,
+    essay-type: 'Advantage & Disadvantage,
+    structure: `
+        1.Introduction
+            -Topic paraphrase
+            -Author's point
+        2.Body-1(Problems)
+            -On the one hand/..., topic sentence
+            -Argument-1 -> Reason/Example/Detail
+            -Argument-2 -> Reason/Example/Detail
+            -Argument-3 (optional) -> Reason/Example/Detail
+        2.Body-2(Solutions)
+            -On the other hand/..., topic sentence
+            -Argument-1 -> Reason/Example/Detail
+            -Argument-2 -> Reason/Example/Detail
+            -Argument-3 (optional) -> Reason/Example/Detail
+        4.Conclusion
+            -In concusion/ To conclude, Topic paraphrase
+            -Author's point
+    `
+}
