@@ -1,12 +1,10 @@
 import os
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
-import openai
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# 📁 Strukturaviy qoida fayli
+#  Strukturaviy qoida fayli
 txt_path = "data/structure.txt"
 
 def read_txt(file_path):
@@ -16,10 +14,10 @@ def read_txt(file_path):
             return file.read()
     return "Xatolik: 'structure.txt' fayli topilmadi!"
 
-# 📜 Strukturani o‘qish
+#  Strukturani o‘qish
 structure_text = read_txt(txt_path)
 
-# ✅ Essayni o‘zgaruvchidan olish
+# Essayni o‘zgaruvchidan olish
 text_essay = """
 Problem & Solution
 
@@ -53,7 +51,7 @@ environment. If we act now, we can save forests and help the planet.
 if "Xatolik" in structure_text:
     print("❌ Strukturaviy qoida faylini o‘qib bo‘lmadi!")
 else:
-    model = ChatOpenAI(model_name="gpt-4o")
+    model = ChatOpenAI(model_name="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"))
 
     message = [
         {"role": 'system', "content": 'Siz professional tilshunos va grammatik tahlilchisiz.'},

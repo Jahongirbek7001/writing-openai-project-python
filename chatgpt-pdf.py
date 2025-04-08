@@ -2,10 +2,8 @@ import os
 import fitz
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
-import openai
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # pdf_path = "data/essay.pdf"  # To'g'ri essay
 # pdf_path = "data/essay1.pdf"  # Strukturasi xato essay essay
@@ -36,7 +34,7 @@ structure_text = read_txt(txt_path)
 if "Xatolik" in essay_text or "Xatolik" in structure_text:
     print("PDF yoki TXT faylni o‘qib bo‘lmadi!")
 else:
-    model = ChatOpenAI(model_name="gpt-4o")
+    model = ChatOpenAI(model_name="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"))
     
     message = [
         {"role": 'system', "content": 'Siz professional tilshunos va grammatik tahlilchisiz.'},
